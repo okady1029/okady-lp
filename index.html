@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            margin: 0;
+            background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+            color: #333;
+            min-height: 100vh;
+        }
+        header {
+            background: rgba(51, 51, 51, 0.8);
+            backdrop-filter: blur(10px);
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .hero, .section {
+            text-align: center;
+            padding: 50px 40px;
+            background: rgba(255, 255, 255, 0.2);
+            margin-bottom: 20px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .hero h1 {
+            font-size: 3rem;
+            color: #111;
+        }
+        .section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+            color: #222;
+        }
+        .work-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .work-item {
+            background: rgba(255, 255, 255, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .work-item:hover {
+            transform: translateY(-5px);
+        }
+        .work-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .about-icon {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.5);
+        }
+        .activity-list {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .activity-list li {
+            background: rgba(255, 255, 255, 0.3);
+            margin-bottom: 10px;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(51, 51, 51, 0.8);
+            backdrop-filter: blur(10px);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#works">Works</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <h1>My Portfolio</h1>
+            <p>Web Developer & Designer</p>
+        </div>
+
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <img src="images/ebisu01.png" alt="My Icon" class="about-icon">
+            <p style="font-size: 1.2em; font-weight: bold;">okady</p>
+            <p>AI × Web3 クリエイター兼コミュニティモデレーターとして、仕事でも趣味でも “テクノロジーで可能性を広げる” をテーマに活動しています。</p>
+        </section>
+
+        <section id="works" class="section">
+            <h2>Works</h2>
+            <div class="work-grid">
+                <div class="work-item">
+                    <h3>AI LINEスタンプ制作</h3>
+                    <a href="https://store.line.me/stickershop/product/25728363/ja" target="_blank" rel="noopener noreferrer">
+                        <img src="images/romaco-lineStamp.png" alt="ロマ子様ぶち落としスタンプ">
+                    </a>
+                    <p>罵尻ロマ子様のAI技術を活用したLINEスタンプを制作・販売しました。</p>
+                    <a href="https://store.line.me/stickershop/product/25728363/ja" target="_blank" rel="noopener noreferrer">「ロマ子様ぶち落としスタンプ」販売ページ</a>
+                </div>
+                <div class="work-item">
+                    <h3>メタバースワールド構築</h3>
+                    <a href="https://cluster.mu/w/2a4906cd-d4fd-4fbf-b416-70d170e622cc" target="_blank" rel="noopener noreferrer">
+                        <img src="images/romaco-world.png" alt="ロマ子様のメタバースお誕生日会＆ライブ会場">
+                    </a>
+                    <p>「ロマ子様メタバースお誕生日会」の企画・ワールド構築を行いました。</p>
+                    <a href="https://cluster.mu/w/2a4906cd-d4fd-4fbf-b416-70d170e622cc" target="_blank" rel="noopener noreferrer">「ロマ子様のメタバースお誕生日会＆ライブ会場」ワールドページ</a>
+                </div>
+                <div class="work-item">
+                    <h3>TEAM RED AMA フライヤー</h3>
+                    <img src="images/TeamRed.png" alt="TEAM RED AMAのフライヤー">
+                    <p>TEAM RED AMAのイベントフライヤーをデザインしました。</p>
+                </div>
+                <div class="work-item">
+                    <h3>ゆるコインファンアート</h3>
+                    <img src="images/yurucoin.png" alt="ゆるコインのファンアート">
+                    <p>Yurucoinのファンアートを制作しました。</p>
+                </div>
+                <div class="work-item">
+                    <h3>AKAINUAKANEKO ファンアート</h3>
+                    <img src="images/akainu-akaneko.png" alt="AKAINUAKANEKOのファンアート">
+                    <p>AKAINUAKANEKOのファンアートを制作しました。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>お問い合わせはこちらからどうぞ。</p>
+            <p>X: <a href="https://x.com/vr_okady" target="_blank" rel="noopener noreferrer">@vr_okady</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
